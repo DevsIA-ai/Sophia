@@ -173,6 +173,11 @@ body.env-open { overflow:hidden; }
   </div>
 </div>
 
+<style>
+.gal-carousel { scrollbar-width:none; }
+.gal-carousel::-webkit-scrollbar { display:none; }
+</style>
+
 <script>
 (function(){
   const p = new URLSearchParams(window.location.search);
@@ -380,16 +385,6 @@ function cerrarSobre(){
     <img src="rollo.png" alt="My story" style="display:block; width:100%; height:auto;">
   </section>
 
-  <!-- ===== GALERÍA 1 ===== -->
-  <section style="padding:26px 20px 6px;">
-    <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:10px;">
-      <div style="aspect-ratio:3/4; border-radius:6px; overflow:hidden; box-shadow:0 8px 18px rgba(120,80,95,.18); transform:rotate(-1.5deg);"><image-slot id="gal1" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.03%20AM.jpeg" shape="rect" placeholder="Foto"></image-slot></div>
-      <div style="aspect-ratio:3/4; border-radius:6px; overflow:hidden; box-shadow:0 8px 18px rgba(120,80,95,.18); transform:rotate(1.5deg); margin-top:16px;"><image-slot id="gal2" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(2).jpeg" shape="rect" placeholder="Foto"></image-slot></div>
-      <div style="aspect-ratio:3/4; border-radius:6px; overflow:hidden; box-shadow:0 8px 18px rgba(120,80,95,.18); transform:rotate(1deg);"><image-slot id="gal3" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(3).jpeg" shape="rect" placeholder="Foto"></image-slot></div>
-      <div style="aspect-ratio:3/4; border-radius:6px; overflow:hidden; box-shadow:0 8px 18px rgba(120,80,95,.18); transform:rotate(-1deg); margin-top:-16px;"><image-slot id="gal4" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(4).jpeg" shape="rect" placeholder="Foto"></image-slot></div>
-    </div>
-  </section>
-
   <!-- ===== ITINERARIO ===== -->
   <section style="padding:38px 26px 10px;">
     <div style="text-align:center; margin-bottom:8px;">
@@ -444,26 +439,56 @@ function cerrarSobre(){
     </div>
   </section>
 
-  <!-- ===== GALERÍA 2 ===== -->
-  <section style="padding:10px 20px 6px;">
-    <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:10px;">
-      <div style="aspect-ratio:3/4; border-radius:6px; overflow:hidden; box-shadow:0 8px 18px rgba(120,80,95,.18); transform:rotate(-1.5deg);"><image-slot id="gal5" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(5).jpeg" shape="rect" placeholder="Foto"></image-slot></div>
-      <div style="aspect-ratio:3/4; border-radius:6px; overflow:hidden; box-shadow:0 8px 18px rgba(120,80,95,.18); transform:rotate(1.5deg); margin-top:16px;"><image-slot id="gal6" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(8).jpeg" shape="rect" placeholder="Foto"></image-slot></div>
+  <!-- ===== VESTIMENTA ===== -->
+  <section style="padding:34px 26px 10px; text-align:center;">
+    <div style="font-family:'EB Garamond',serif; font-size:12px; letter-spacing:3px; color:#e39ab8; text-transform:uppercase; margin-bottom:6px;">Código de vestimenta</div>
+    <h2 style="font-family:'Playfair Display',serif; font-style:italic; font-weight:600; font-size:36px; color:#2a2426; margin:0 0 30px;">Formal</h2>
+    <div style="display:flex; justify-content:center; gap:40px;">
+      <div>
+        <img src="icono-vestimenta-formal-hombre.png" alt="Hombres" style="width:90px; height:90px; object-fit:contain;">
+        <div style="font-family:'Playfair Display',serif; font-style:italic; font-size:19px; color:#c07d9c; margin-top:10px;">Traje</div>
+        <div style="font-family:'EB Garamond',serif; font-size:13px; letter-spacing:2px; text-transform:uppercase; color:#9a8b86; margin-top:2px;">Hombres</div>
+      </div>
+      <div>
+        <img src="icono-vestimenta-formal-mujer.png" alt="Mujeres" style="width:90px; height:90px; object-fit:contain;">
+        <div style="font-family:'Playfair Display',serif; font-style:italic; font-size:19px; color:#c07d9c; margin-top:10px;">Vestido largo</div>
+        <div style="font-family:'EB Garamond',serif; font-size:13px; letter-spacing:2px; text-transform:uppercase; color:#9a8b86; margin-top:2px;">Mujeres</div>
+      </div>
+    </div>
+    <div style="margin-top:28px; display:inline-flex; align-items:center; gap:9px; background:#fbe9f0; border:1px solid #f3b6d0; border-radius:40px; padding:11px 22px;">
+      <span style="width:10px; height:10px; border-radius:50%; background:#e0468f; flex:0 0 auto;"></span>
+      <span style="font-family:'EB Garamond',serif; font-size:14px; color:#97406a;">El color rosa queda reservado para la quinceañera</span>
     </div>
   </section>
 
   <!-- ===== INVITE TEXT ===== -->
   <section style="padding:26px 26px 6px; text-align:center;">
     <p style="font-family:'Playfair Display',serif; font-size:23px; line-height:1.45; color:#2a2426; margin:0;">¡Me haría muy feliz que me acompañes en mis XV años! Tu presencia haría este día aún más especial. Espero poder compartir risas, momentos lindos y celebrar juntos esta noche tan importante para mí.</p>
-    <p style="font-family:'Caveat',cursive; font-size:23px; color:#b45e83; margin:22px 0 0;">No habrá mesa de regalos, solo lluvia de sobres 💌</p>
+    <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:20px; line-height:1.55; color:#97406a; margin:28px 0 0;">Cada recuerdo que atesoro es invaluable, pero si deseas sumarle a mis nuevos proyectos, te agradezco tu generoso apoyo en un sobre.</p>
+    <img src="lluvia%20de%20sobres.png" alt="Lluvia de sobres" style="width:190px; max-width:55%; height:auto; margin:22px auto 0; display:block;">
   </section>
 
-  <!-- ===== FLAMINGO + RSVP ===== -->
+  <!-- ===== GALERÍA (CARRUSEL) + RSVP ===== -->
   <section style="padding:14px 26px 46px; text-align:center;">
-    <div style="position:relative; margin:0 auto 26px; width:78%;">
+    <h2 style="font-family:'Playfair Display',serif; font-style:italic; font-weight:600; font-size:32px; color:#c07d9c; margin:0 0 20px;">Galería</h2>
+    <div style="position:relative; margin:0 auto 10px; width:78%;">
       <img src="fondo%20del%20lugar%20de%20envento.png" alt="" style="position:absolute; inset:-20% -22%; width:calc(100% + 44%); height:calc(100% + 40%); object-fit:contain;">
-      <div style="position:relative; aspect-ratio:1/1;"><image-slot id="flamingo" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(9).jpeg" shape="rect" placeholder="flamingo float"></image-slot></div>
+      <div style="position:relative; aspect-ratio:1/1; border-radius:16px; overflow:hidden; box-shadow:0 14px 30px rgba(120,80,95,.28);">
+        <div class="gal-carousel" style="display:flex; width:100%; height:100%; overflow-x:auto; scroll-snap-type:x mandatory;">
+          <div style="flex:0 0 100%; height:100%; scroll-snap-align:center;"><image-slot id="gal1" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.03%20AM.jpeg" shape="rect" placeholder=""></image-slot></div>
+          <div style="flex:0 0 100%; height:100%; scroll-snap-align:center;"><image-slot id="gal2" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(2).jpeg" shape="rect" placeholder=""></image-slot></div>
+          <div style="flex:0 0 100%; height:100%; scroll-snap-align:center;"><image-slot id="gal3" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(3).jpeg" shape="rect" placeholder=""></image-slot></div>
+          <div style="flex:0 0 100%; height:100%; scroll-snap-align:center;"><image-slot id="gal4" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(4).jpeg" shape="rect" placeholder=""></image-slot></div>
+          <div style="flex:0 0 100%; height:100%; scroll-snap-align:center;"><image-slot id="gal5" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(5).jpeg" shape="rect" placeholder=""></image-slot></div>
+          <div style="flex:0 0 100%; height:100%; scroll-snap-align:center;"><image-slot id="gal6" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(8).jpeg" shape="rect" placeholder=""></image-slot></div>
+          <div style="flex:0 0 100%; height:100%; scroll-snap-align:center;"><image-slot id="gal7" src="galeria/WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(9).jpeg" shape="rect" placeholder=""></image-slot></div>
+          <div style="flex:0 0 100%; height:100%; scroll-snap-align:center;"><image-slot id="gal8" src="WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(1).jpeg" shape="rect" placeholder=""></image-slot></div>
+          <div style="flex:0 0 100%; height:100%; scroll-snap-align:center;"><image-slot id="gal9" src="WhatsApp%20Image%202026-08-05%20at%2010.56.04%20AM%20(10).jpeg" shape="rect" placeholder=""></image-slot></div>
+          <div style="flex:0 0 100%; height:100%; scroll-snap-align:center;"><image-slot id="gal10" src="WhatsApp%20Image%202026-08-05%20at%207.35.43%20PM%20(1).jpeg" shape="rect" placeholder=""></image-slot></div>
+        </div>
+      </div>
     </div>
+    <div style="font-family:'EB Garamond',serif; font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#9a8b86; margin-bottom:26px;">← Desliza para ver más →</div>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeo_LpvC3t5fEy6jdsTV_iSHXOfxBu6jonfr6wYyusUeuVgw/viewform?usp=sharing&ouid=118402171764080150917" target="_blank" style="display:inline-flex; align-items:center; gap:16px; background:#c58aa4; color:#4a3540; font-family:'Playfair Display',serif; font-weight:500; font-size:21px; letter-spacing:1px; padding:16px 30px; border-radius:40px; text-align:left; line-height:1.15; box-shadow:0 10px 22px rgba(160,110,135,.3);">
       <span style="text-transform:uppercase;">Confirma aquí<br>tu asistencia</span>
       <span style="font-size:30px;">🗒</span>
