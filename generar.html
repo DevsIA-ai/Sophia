@@ -157,6 +157,15 @@
   }
   .btn-reset:hover { background:rgba(215,106,151,.12); }
 
+  .btn-confirmaciones {
+    display:block; width:100%; margin-top:1.6rem; padding:.7rem;
+    border:1px dashed rgba(215,106,151,.5); border-radius:50px;
+    font-family:var(--sans); font-size:.6rem; letter-spacing:.24em; text-transform:uppercase;
+    color:var(--rose-dark); text-decoration:none; text-align:center;
+    transition:background .25s, border-color .25s;
+  }
+  .btn-confirmaciones:hover { background:rgba(215,106,151,.1); border-color:var(--rose); }
+
   @media(max-width:480px){
     .card { padding:2rem 1.4rem 1.8rem; }
     .btn-row { flex-direction:column; }
@@ -220,6 +229,8 @@
     </div>
     <button class="btn-reset" onclick="resetFormulario()">↺ &nbsp;Generar otra invitación</button>
   </div>
+
+  <a href="https://docs.google.com/spreadsheets/d/1xZm9OXBH542O-6ZJw5l3ZN8KyY9Z4H7UEpLHr5ENFTE/edit?usp=sharing" target="_blank" rel="noopener" class="btn-confirmaciones">📋 &nbsp;Ver Confirmaciones &nbsp;↗</a>
 </div>
 
 <script>
